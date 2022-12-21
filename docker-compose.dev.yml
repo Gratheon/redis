@@ -6,3 +6,7 @@ services:
     ports:
       - 6379:6379
     command: redis-server --requirepass pass
+    networks:
+      - gratheon
+networks:
+  gratheon:
