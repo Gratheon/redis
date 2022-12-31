@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 services:
   redis:
     image: redis:6.2.6-alpine
@@ -6,6 +6,7 @@ services:
     ports:
       - 6379:6379
     command: redis-server --requirepass pass
+    network_mode: bridge
     networks:
       - gratheon
 networks:
