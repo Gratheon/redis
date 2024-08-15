@@ -6,7 +6,6 @@ services:
     ports:
       - 5200:6379
     command: redis-server --requirepass pass
-    network_mode: bridge
     networks:
       - gratheon
 networks:
