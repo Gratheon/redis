@@ -1,4 +1,4 @@
-version: '3.9'
+#version: '3.9'
 services:
   redis:
     image: redis:6.2.6-alpine
@@ -6,7 +6,7 @@ services:
     ports:
       - 5200:6379
     command: redis-server --requirepass pass
-    networks:
-      - gratheon
-networks:
-  gratheon:
+#    networks:
+#      - gratheon
+#networks:
+#  gratheon:
